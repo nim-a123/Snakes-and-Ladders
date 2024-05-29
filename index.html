@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+
+  <div class="modal_onload_page " id="modal" >
+    <div class="modal_box" >
+      <div> <h2 class="modal_text" > Choose game mode </h2>  </div>
+      <div class="flex_modal" >
+    <button class="modal_button" onclick="player_1()"  > 1 player </button>
+    <button class="button_2" onclick="player_2()"> 2 player </button>
+
+  </div>
+  <div class="" >
+
+    <div class="flex_modal" >
+
+      <button class="button_3" > Soon ... </button>
+      <button class="button_4">   Soon ... </button>
+
+    </div>
+
+  </div>
+</div>
+  </div>
+
+
+   <div class="hidden" id="main_game_shower"  >
+
+    <div class="Main_snake_box "  >
+        <div class=" snake_grid" >
+
+        
+
+        <div class="snake_home snake_home_diffrent_background_2x2"> <div> <img class="crown" src="photo/crown-100.svg" alt=""> </div>     </div>
+        <div class="snake_home" > 99   </div>
+        <div class="snake_home " >  98   </div>
+        <div class="snake_home" >  97  </div>
+        <div class="snake_home snake_home_snake" >  <img class="snake_photo" src="photo/snake.svg" alt="">  96   </div>
+        <div class="snake_home" >  95  </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  94   </div>
+        <div class="snake_home" >  93   </div>
+        <div class="snake_home snake_home_ladder_1" >  92   </div>
+        <div class="snake_home" >  91   </div>
+
+        <div class="snake_home snake_home_ladder_1" >  81   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  82   </div>
+        <div class="snake_home" >  83  </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  84  </div>
+        <div class="snake_home" >  85  </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  86  </div>
+        <div class="snake_home snake_home_snake" > <img class="snake_photo" src="photo/snake.svg" alt="">   87   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  88   </div>
+        <div class="snake_home snake_home_snake" > <img class="snake_photo" src="photo/snake.svg" alt="">   89   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  90   </div>
+
+
+        <div class="snake_home snake_home_diffrent_background_2x2" >  80   </div>
+        <div class="snake_home" >  79   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  78   </div>
+        <div class="snake_home" >  77   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  76  </div>
+        <div class="snake_home" >  75   </div>
+        <div class="snake_home snake_home_ladder" >  <img class="l7"  src="photo/ladder (2).svg" >  74   </div>
+        <div class="snake_home" >  73   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  72   </div>
+        <div class="snake_home" >  71  </div>
+
+
+        <div class="snake_home " >  61   </div>
+        <div class="snake_home snake_home_ladder" >  <img class="l6"  src="photo/ladder (2).svg" alt=""> 62   </div>
+        <div class="snake_home snake_home_ladder_1" >  63   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  64   </div>
+        <div class="snake_home" >  65   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  66   </div>
+        <div class="snake_home" >  67   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  68   </div>
+        <div class="snake_home snake_home_ladder_1" >  69   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  70   </div>
+
+        <div class="snake_home snake_home_diffrent_background_2x2" >  60   </div>
+        <div class="snake_home" >  59   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  58   </div>
+        <div class="snake_home" >  57   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  56   </div>
+        <div class="snake_home" >  55   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  54   </div>
+        <div class="snake_home snake_home_snake_1" >  53   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  52   </div>
+        <div class="snake_home" >  51   </div>
+
+        <div class="snake_home snake_home_snake_1" >  41   </div>
+        <div class="snake_home snake_home_ladder" >  <img class="l5"  src="photo/ladder (2).svg" alt="">  42   </div>
+        <div class="snake_home" >  43  </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  44   </div>
+        <div class="snake_home" >  45   </div>
+        <div class="snake_home snake_home_ladder_1" >  46   </div>
+        <div class="snake_home" >  47   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  48   </div>
+        <div class="snake_home snake_home_ladder_1" >  49   </div>
+        <div class="snake_home snake_home_ladder" >   <img class="l4"  src="photo/ladder (2).svg" alt="">  50   </div>
+
+        <div class="snake_home snake_home_snake" > <div >   <img class="snake_photo" src="photo/snake.svg" alt="">  </div>  40   </div>
+        <div class="snake_home" >  39   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  38   </div>
+        <div class="snake_home snake_home_snake_1" >  37   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  36   </div>
+        <div class="snake_home" >  35   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  34   </div>
+        <div class="snake_home snake_home_ladder" >  <img class="l3"  src="photo/ladder (2).svg" alt=""> 33   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  32   </div>
+        <div class="snake_home" >  31   </div>
+
+
+        <div class="snake_home" >  21   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  22   </div>
+        <div class="snake_home" >  23   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  24  </div>
+        <div class="snake_home snake_home_ladder_1" >  25   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  26   </div>
+        <div class="snake_home" >  27   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  28   </div>
+        <div class="snake_home" >  29   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  30   </div>
+
+        <div class="snake_home snake_home_diffrent_background_2x2" >  20   </div>
+        <div class="snake_home" >  19   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  18   </div>
+        <div class="snake_home" >  17   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  16   </div>
+        <div class="snake_home" >  15   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  14   </div>
+        <div class="snake_home snake_home_ladder" > <img class="l2"  src="photo/ladder (2).svg" alt="">  13   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  12   </div>
+        <div class="snake_home" >  11   </div>
+
+
+        <div class="snake_home" id="inejctor" > <div class="hidden"  id="ball"></div> <div class="hidden" id="ball_2"></div> 1   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >   2 </div>
+        <div class="snake_home snake_home_snake_1" >  3   </div>
+        <div class="snake_home snake_home_ladder" >   <div><img class="l1"  src="photo/ladder (2).svg" alt=""></div> 4  </div>
+        <div class="snake_home" >  5   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  6   </div>
+        <div class="snake_home" >  7  </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  8   </div>
+        <div class="snake_home" >  9   </div>
+        <div class="snake_home snake_home_diffrent_background_2x2" >  10   </div>
+
+
+
+
+    </div>
+    </div>
+
+    <div class="flex_soon" >
+        <h2 id="alert"  ></h2>
+        <div class="flex" id="inejctor_button" >
+       
+           <!--<button onclick="online_player_1()""  class="button rr1 "  id="btn"> Roll 1 </button>
+            <button onclick="online_player_2()""  class="button rr1 "  id="btn2"> Roll 2 </button>-->
+        
+        </div>
+        <div class="flex" id="tas_injector" >
+       <div id="tasanim" class="hidden" >   <h3 class="fontasioan" id="zzz" >   </h3>  </div>
+       <div id="tasanim_2" class="hidden" >   <h3 class="fontasioan_2" id="xxx" >   </h3>  </div>
+    </div>
+    </div>
+
+ 
+<div>
+
+
+
+
+
+
+</div>
+
+ 
+</div>
+</body>
+</html>
+
+<audio id="song_1">
+    <source src="sound/beffortas.mp3" type="audio/ogg">
+    <source src="sound/beffortas.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_2">
+    <source src="sound/bigwin.wav" type="audio/ogg">
+    <source src="sound/bigwin.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_3">
+    <source src="sound/bigloss.wav" type="audio/ogg">
+    <source src="sound/bigloss.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_4">
+    <source src="sound/gg.mp3" type="audio/ogg">
+    <source src="sound/gg.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_snake">
+    <source src="sound/snake.mp3" type="audio/ogg">
+    <source src="sound/snake.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_6">
+    <source src="sound/game start.mp3" type="audio/ogg">
+    <source src="sound/game start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="song_7">
+    <source src="sound/game start.mp3" type="audio/ogg">
+    <source src="sound/game start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+<script src="javascript.js" ></script>
